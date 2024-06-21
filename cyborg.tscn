@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ceqfp33twgtxu"]
+
+[ext_resource type="Texture2D" uid="uid://dffr8r0ak4u4g" path="res://3 Cyborg/Cyborg_idle.png" id="1_0pyqt"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qp8p5"]
+radius = 8.0
+height = 34.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_qp8p5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0pyqt")
+region_enabled = true
+region_rect = Rect2(3, 13, 19, 35)
